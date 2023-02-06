@@ -60,10 +60,14 @@ header {
 
 nav {
     background-color: var(--bs-white);
-    grid-template-columns: 10% 50%;
+    grid-template-columns: 10% 60%;
     justify-content: space-between;
     position: absolute;
     top: 5%;
+}
+
+nav input {
+    display: none;
 }
 
 .burger>div:first-child {
@@ -677,6 +681,33 @@ footer a:hover {
         grid-template-columns: 4fr 1fr;
     }
 
+    nav input {
+        display: block;
+        opacity: 0;
+        width: 50px;
+        height: 85px;
+        position: absolute;
+        left: 85%;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    nav>input:checked+.burger>div:first-child>a::after {
+        transform: rotate(45deg) translate(-12px, -10px);
+        transform-origin: right;
+    }
+
+    nav>input:checked+.burger>div:first-child>a::before {
+        transform: rotate(-45deg) translate(-8px, 10px);
+        transform-origin: left left;
+    }
+
+    nav>input:checked+.burger>div:first-child>a>span::after {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
     .list {
         background-color: var(--bs-white);
         width: 200px;
@@ -691,7 +722,7 @@ footer a:hover {
         visibility: visible;
     }
 
-    .burger:hover .list {
+    nav>input:checked+.burger>.list {
         display: block;
         visibility: visible;
     }
@@ -972,6 +1003,34 @@ footer a:hover {
         grid-template-columns: 4fr 1fr;
     }
 
+    
+    nav input {
+        display: block;
+        opacity: 0;
+        width: 50px;
+        height: 85px;
+        position: absolute;
+        left: 85%;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    nav>input:checked+.burger>div:first-child>a::after {
+        transform: rotate(45deg) translate(-10px, -6px);
+        transform-origin: right;
+    }
+
+    nav>input:checked+.burger>div:first-child>a::before {
+        transform: rotate(-45deg) translate(-8px, 10px);
+        transform-origin: left left;
+    }
+
+    nav>input:checked+.burger>div:first-child>a>span::after {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
     .list {
         background-color: var(--bs-white);
         width: 200px;
@@ -986,7 +1045,7 @@ footer a:hover {
         visibility: visible;
     }
 
-    .burger:hover .list {
+    nav>input:checked+.burger>.list {
         display: block;
         visibility: visible;
     }
@@ -1256,6 +1315,34 @@ footer a:hover {
         grid-template-columns: 10% 10%;
     }
 
+    
+    nav input {
+        display: block;
+        opacity: 0;
+        width: 50px;
+        height: 85px;
+        position: absolute;
+        left: 92%;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    nav>input:checked+.burger>div:first-child>a::after {
+        transform: rotate(45deg) translate(-8px, -7px);
+        transform-origin: right;
+    }
+
+    nav>input:checked+.burger>div:first-child>a::before {
+        transform: rotate(-45deg) translate(-8px, 10px);
+        transform-origin: left left;
+    }
+
+    nav>input:checked+.burger>div:first-child>a>span::after {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
     nav h3 {
         font-size: 22px;
     }
@@ -1265,7 +1352,7 @@ footer a:hover {
         width: 50%;
     }
 
-    .burger:hover .list {
+    nav>input:checked+.burger>.list {
         display: block;
         visibility: visible;
     }
