@@ -53,8 +53,6 @@ header {
     position: relative;
 }
 
-
-
 .container {
     width: 70%;
     margin: 0 auto;
@@ -68,12 +66,12 @@ nav {
     top: 5%;
 }
 
-.burger>div:first-child{
+.burger>div:first-child {
     background-color: transparent;
     visibility: hidden;
 }
 
-.burger>div:first-child{
+.burger>div:first-child {
     display: inline-block;
     width: 30%;
     height: 100%;
@@ -683,13 +681,13 @@ footer a:hover {
         background-color: var(--bs-white);
         width: 200px;
         display: none;
-        visibility:hidden;
+        visibility: hidden;
         position: absolute;
         top: 0;
         right: 20%;
     }
 
-    .burger>div:first-child{
+    .burger>div:first-child {
         visibility: visible;
     }
 
@@ -698,11 +696,11 @@ footer a:hover {
         visibility: visible;
     }
 
-    .dropdown1{
+    .dropdown1 {
         top: 40%;
     }
 
-    .selection1::after{
+    .selection1::after {
         bottom: 50%;
     }
 
@@ -732,7 +730,7 @@ footer a:hover {
         font-size: 8px;
     }
 
-    .content button{
+    .content button {
         width: 100px;
         padding: 14px;
     }
@@ -767,7 +765,7 @@ footer a:hover {
         font-size: 15px;
     }
 
-    .properties button{
+    .properties button {
         width: 150px;
         padding: 10px;
     }
@@ -978,13 +976,13 @@ footer a:hover {
         background-color: var(--bs-white);
         width: 200px;
         display: none;
-        visibility:hidden;
+        visibility: hidden;
         position: absolute;
         top: 0;
         right: 20%;
     }
 
-    .burger>div:first-child{
+    .burger>div:first-child {
         visibility: visible;
     }
 
@@ -993,11 +991,11 @@ footer a:hover {
         visibility: visible;
     }
 
-    .dropdown1{
+    .dropdown1 {
         top: 40%;
     }
 
-    .selection1::after{
+    .selection1::after {
         bottom: 50%;
     }
 
@@ -1262,7 +1260,7 @@ footer a:hover {
         font-size: 22px;
     }
 
-    .burger>div:first-child{
+    .burger>div:first-child {
         visibility: visible;
         width: 50%;
     }
@@ -1272,11 +1270,11 @@ footer a:hover {
         visibility: visible;
     }
 
-    .dropdown1{
+    .dropdown1 {
         top: 40%;
     }
 
-    .selection1::after{
+    .selection1::after {
         bottom: 50%;
     }
 
@@ -1546,11 +1544,11 @@ footer a:hover {
         font-size: 26px;
     }
 
-    .selection1::after{
-       left: 100px;
+    .selection1::after {
+        left: 100px;
     }
 
-    .dropdown2{
+    .dropdown2 {
         width: 200px;
     }
 
