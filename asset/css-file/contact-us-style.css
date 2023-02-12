@@ -69,12 +69,12 @@ nav input {
     display: none;
 }
 
-.burger>div:first-child{
+.burger>div:first-child {
     background-color: transparent;
     visibility: hidden;
 }
 
-.burger>div:first-child{
+.burger>div:first-child {
     display: inline-block;
     width: 30%;
     height: 100%;
@@ -406,12 +406,22 @@ footer a:hover {
         transform: translate(0, -50%);
     }
 
+    .burger>div:first-child>a::after{
+        transition: all 0;
+    }
+
     nav>input:checked+.burger>div:first-child>a::after {
+        transition: all 1s;
         transform: rotate(45deg) translate(-10px, -6px);
         transform-origin: right;
     }
 
+    .burger>div:first-child>a::before{
+        transition: all 0;
+    }
+
     nav>input:checked+.burger>div:first-child>a::before {
+        transition: all 1s;
         transform: rotate(-45deg) translate(-8px, 10px);
         transform-origin: left left;
     }
@@ -419,34 +429,36 @@ footer a:hover {
     nav>input:checked+.burger>div:first-child>a>span::after {
         visibility: hidden;
         opacity: 0;
-
     }
-    
-    .list {
+
+    .burger>.list {
+        transition: all 0;
         background-color: var(--bs-white);
         width: 200px;
         height: 250px;
-        display: none;
-        visibility:hidden;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top: 0;
         right: 20%;
     }
 
-    .burger>div:first-child{
+    .burger>div:first-child {
         visibility: visible;
     }
 
     nav>input:checked+.burger>.list {
+        transition: all 1s;
+        opacity: 1;
         display: block;
         visibility: visible;
     }
 
-    .dropdown1{
+    .dropdown1 {
         top: 40%;
     }
 
-    .selection1::after{
+    .selection1::after {
         left: 50%;
         bottom: 50%;
     }
@@ -485,8 +497,8 @@ footer a:hover {
         padding-bottom: 20%;
     }
 
-    .title p{
-        width: 100% !important; 
+    .title p {
+        width: 100% !important;
     }
 
     .form {
@@ -599,12 +611,22 @@ footer a:hover {
         transform: translate(0, -50%);
     }
 
+    .burger>div:first-child>a::after {
+        transition: all 0;
+    }
+
     nav>input:checked+.burger>div:first-child>a::after {
+        transition: all 1s;
         transform: rotate(45deg) translate(-6px, -3px);
         transform-origin: right;
     }
 
+    .burger>div:first-child>a::before {
+        transition: all 0;
+    }
+
     nav>input:checked+.burger>div:first-child>a::before {
+        transition: all 1s;
         transform: rotate(-45deg) translate(-8px, 10px);
         transform-origin: left left;
     }
@@ -612,34 +634,35 @@ footer a:hover {
     nav>input:checked+.burger>div:first-child>a>span::after {
         visibility: hidden;
         opacity: 0;
-
     }
 
-    .list {
+    .burger>.list {
+        transition: all 0;
         background-color: var(--bs-white);
         width: 200px;
         height: 250px;
-        display: none;
-        visibility:hidden;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top: 0;
         right: 20%;
     }
 
-    .burger>div:first-child{
+    .burger>div:first-child {
         visibility: visible;
     }
 
     nav>input:checked+.burger>.list {
-        display: block;
+        transition: all 1s;
+        opacity: 1;
         visibility: visible;
     }
 
-    .dropdown1{
+    .dropdown1 {
         top: 40%;
     }
 
-    .selection1::after{
+    .selection1::after {
         left: 50%;
         bottom: 50%;
     }
@@ -678,8 +701,8 @@ footer a:hover {
         padding-bottom: 20%;
     }
 
-    .title p{
-        width: 100% !important; 
+    .title p {
+        width: 100% !important;
     }
 
     .form {
@@ -813,13 +836,13 @@ footer a:hover {
         width: 200px;
         height: 250px;
         display: none;
-        visibility:hidden;
+        visibility: hidden;
         position: absolute;
         top: 0;
         right: 20%;
     }
 
-    .burger>div:first-child{
+    .burger>div:first-child {
         visibility: visible;
     }
 
@@ -828,11 +851,11 @@ footer a:hover {
         visibility: visible;
     }
 
-    .dropdown1{
+    .dropdown1 {
         top: 40%;
     }
 
-    .selection1::after{
+    .selection1::after {
         left: 50%;
         bottom: 50%;
     }
@@ -953,12 +976,12 @@ footer a:hover {
         left: 10%;
         grid-template-columns: 10% 70%;
     }
- 
-     .dropdown2{
-         width: 200px;
-     }
 
-     .dropdown1>li:last-child:after {
+    .dropdown2 {
+        width: 200px;
+    }
+
+    .dropdown1>li:last-child:after {
         left: 70%;
     }
 
